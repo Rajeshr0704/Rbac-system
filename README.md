@@ -36,3 +36,44 @@ RBAC-SYSTEM/
 ├── .env                       // Environment variables
 ├── package.json               // Node.js dependencies  
 ├── server.js                  // Main entry point
+
+
+Setup Instructions
+1. Clone the Repository
+git clone https://github.com/Rajeshr0704/Rbac-system.git
+cd rbac-system
+
+2. Install Dependencies
+npm install
+
+3.Start the Server
+Run the server using nodemon or node:
+nodemon server.js
+The server will start at http://localhost:5000.
+
+API Testing
+Use Postman or Thunder Client to test the endpoints.
+
+Register a User:
+
+POST /api/auth/register
+Body:
+json
+
+{
+  "username": "John Doe",
+  "email": "john@example.com",
+  "password": "password123",
+  "role": "user"
+}
+Login:
+
+POST /api/auth/login
+Body:
+json
+
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+Copy the token from the response.
