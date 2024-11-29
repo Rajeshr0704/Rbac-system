@@ -34,5 +34,5 @@ RBAC-SYSTEM/
 │   ├── authRoutes.js          // Routes for authentication
 │   ├── protectedRoutes.js     // Routes protected by roles
 ├── .env                       // Environment variables
-├── package.json               // Node.js dependencies
+├── package.json               // Node.js dependencies  
 ├── server.js                  // Main entry point
